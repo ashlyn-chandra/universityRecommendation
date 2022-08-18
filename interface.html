@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> What is 2 + 2</h1>
+    <input id="userInput"> <br> 
+    <button onclick="math()"> Submit </button>
+    <h2 id="output"> </h2>
+
+    <script> 
+    var userInputValue = document.querySelector("#userInput")
+    var output = document.querySelector("#output")
+
+    function color() {
+        console.log(userInput)
+        console.log(userInput.value)
+        document.body.style.backgroundColor = userInput.value
+    }
+
+    function math() {
+        if (userInput.value == 4 ) {
+            output.innerHTML = "CORRECT!!"
+        } else { 
+            output.innerHTML = "WRONG! Try again"
+            
+        }
+    }
+    
+
+    
+
+    </script>
+</body>
+</html>

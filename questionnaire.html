@@ -1,0 +1,323 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script type="text/javascript" src="js/Questionnaire1.js"></script>
+      <title> Recommendation </title>
+  </head>
+
+<body>
+  <div class="topnav">
+    <a href="HomePage.html"><img src="images/wheretonextlogo.png"></a>
+    <a href="HomePage.html">Home</a>
+    <a href="About.html">About</a>
+
+      <div class="dropdown">
+
+        <button class="dropbtn">Study Options
+          <i class="fa fa-caret-down"></i>
+        </button>
+
+        <div class="dropdown-content">
+            <a href="BusinessCommerce.html">Business and Commerce</a>
+            <a href="HealthSciences.html">Health and Sciences</a>
+            <a href="EngineeringConstruction.html">Engineering and Construction</a>
+            <a href="MediaMusicPerformingArts.html">Media, Music and Performing Arts</a>
+            <a href="LawJustice.html">Law and Justice</a>
+            <a href="ArtsDesign.html">Arts and Design</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Universities
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="UniversityofAuckland.html">University of Auckland</a>
+          <a href="UniversityofOtago.html">University of Otago</a>
+          <a href="UniversityofCanterbury.html"> University of Canterbury</a>
+          <a href="VictoriaUniversity.html">Victoria University</a>
+        </div>
+     </div>  
+
+     <div> 
+        <a href="questionnaire.html">Recommendation</a>
+      </div>
+  </div>
+
+<div style="padding:16px">
+
+  <div> 
+    <h1> Questionnaire</h1>
+
+    <div class="align"> 
+    <p> <strong> Finding and choosing the right university to pursue your goals is a difficult task. 
+        'Where to Next' is here to help and guide you to your perfect tertiary study. 
+        Fill out and answer all the questions below on the questionnaire we will recommend a university that suits you best.  </strong> </p>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Recommendation Form -->
+<form action="Results.html" method="get" id="quiz">
+	<div class="field">
+        <div class="align"> 
+		<label for="name" class="color"> <strong> Name:  </strong> </label>
+        <label style="color:red"> * </label>
+		<input type="text" id="name" name="name" placeholder="Enter your fullname" />
+        </div>
+	</div> 
+	<div class="field">
+        <div class="align"> 
+		<label for="email" class="color"> <strong> Email: </strong> </label>
+		<input type="text" id="email" name="email" placeholder="Enter your email address" />
+        </div>
+	</div> 
+    <div class="field">
+        <div class="align"> 
+		<label for="age" class="color"> <strong> Age: </strong> </label>
+        <label style="color:red"> * </label>
+		<input type="text" id="age" name="age" placeholder="Enter your age" />
+        </div>
+	</div> <br>
+
+    <div class="align"> 
+        <label> <strong> Question One: What course are you interested in pursuing? </strong> </label> 
+        <label style="color:red"> * </label> <br> 
+        <input type="radio" name="courses" value="Business and Commerce"> Business and Commerce <br>
+        <input type="radio" name="courses" value="Health and Sciences"> Health and Sciences <br>
+        <input type="radio" name="courses" value="Engineering and Construction"> Engineering and Construction <br>
+        <input type="radio" name="courses" value="Media, Music and Performing Arts"> Media, Music and Performing Arts <br>
+        <input type="radio" name="courses" value="Law and Justice"> Law and Justice <br>
+        <input type="radio" name="courses" value="Arts and Design"> Arts and Design <br> <br>
+
+        <label> <strong> Question Two : Are you looking to stay at a university hall? </strong> </label> <br>
+        <input type="radio" name="hall" value="Yes"> Yes <br>
+        <input type="radio" name="hall" value="No"> No <br> <br>
+
+        <label> <strong> Question Three : What have you enjoyed studying the most in year 11-13 ? </strong> </label> <br>
+        <input type="radio" name="study" value="Visual Arts"> Visual Arts <br>
+        <input type="radio" name="study" value="Social Studies"> Social Studies <br>
+        <input type="radio" name="study" value="Technologies"> Technologies <br>
+        <input type="radio" name="study" value="Sciences"> Sciences <br>
+        <input type="radio" name="study" value="Mathematics"> Mathematics <br>
+        <input type="radio" name="study" value="Performing Arts"> Performing Arts <br> <br>
+
+        <label> <strong> Question Four: Where in New Zealand do you want to study? </strong> </label>
+        <label style="color:red"> * </label> <br> 
+        <input type="radio" name="island" value="North Island"> North Island <br>
+        <input type="radio" name="island" value="South Island"> South Island <br> <br>
+
+        <label> <strong> Question Five : Are you looking for a university that has a variety of extracurricular activities? </strong> </label> <br>
+        <input type="radio" name="extracurricular" value="Yes"> Yes <br>
+        <input type="radio" name="extracurricular" value="No"> No <br> <br> 
+
+
+
+
+
+
+
+
+    </div>
+
+<div class="align"> 
+    <input type="button" class="form-submit-button" onclick="recommendationSubmit()" value="Submit">
+</div>
+
+
+</form>
+
+
+
+
+
+<!-- footer -->
+<div class="footer">
+    <div class="contain">
+      <div class="col">
+          <a href="HomePage.html">Home</a><br/>
+          <a href="About.html">About</a><br/>
+          <span>Contact: chandraselvan.a@maristcollege.school.nz</span>
+      </div>
+    </div>
+  </div>
+
+
+<style> 
+
+/* Page Styles */ 
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h4 {text-align: center;}
+h1 {color: #023047;} 
+.color {color: #017997;} 
+.align {text-align: center;}
+
+
+
+
+/* Top Navigation Bar */ 
+.topnav {
+  overflow: hidden;
+  background-color: #729ce9;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #fb8500;
+  color: rgb(255, 255, 255);
+}
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+
+} 
+
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #fb8500;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+
+} 
+
+h1 {text-align: center;}
+
+
+/* Submit button Styles */
+.form-submit-button {
+  background: #375ea5;
+  color: white;
+  border-style: outset;
+  border-color: #0c354d;
+  height: 50px;
+  width: 100px;
+  font: bold15px arial,sans-serif;
+  text-shadow: none;
+}
+
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: 100px;
+  background-color: #729ce9;
+  padding-top:10px;
+}
+
+.footer .col {
+  width: 600px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+    
+.footer .col a,
+.footer .col p,
+.footer .col span{
+  color: white;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  text-decoration: none;
+}
+
+.clearfix {
+  clear: both;
+}
+
+
+
+
+
+</style>
+
+</body>
