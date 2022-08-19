@@ -6,7 +6,7 @@ function recommendationSubmit() {
     var userAge = document.getElementById("age").value;
     var userName = document.getElementById("name").value;
     var lowerBoundary = 15;
-    var higherBoundary = 91;
+    var higherBoundary = 90;
     //const courseButtons = document.querySelectorAll('input[name="courses"]');
 
     //Error message array
